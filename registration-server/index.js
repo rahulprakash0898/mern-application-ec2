@@ -10,7 +10,7 @@ app.get("/",(req,res)=>{
     res.send("hello world..!")
 })
 app.listen(port,()=>{
-   mongoose.connect('mongodb://172.31.93.232:27017/devops-cloud-users',{useNewUrlParser: true},()=>{
+   mongoose.connect('mongodb://172.31.21.213/devops-cloud-users',{useNewUrlParser: true},()=>{
 //    mongoose.connect('mongodb://localhost:27017/devops-cloud-users',{useNewUrlParser: true},()=>{
     console.log("connected to database");
 })
